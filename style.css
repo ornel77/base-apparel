@@ -67,17 +67,14 @@ main form input {
     color: var(--desat-red);
     background: transparent;
     border: 1px solid var(--desat-red);
+    /* border: 1px solid red; */
+    outline: none;
     font-size: 0.8rem;
     border-radius: 40px;
     position: relative;
 }
 
-main form .icon-error {
-    position: absolute;
-    left: 67%;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 main form .btn {
     background: var(--gradient2);
@@ -89,19 +86,35 @@ main form .btn {
     border-radius: 40px;
     cursor: pointer;
     box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.19);
+    outline: none;
+    border: none;
 }
 
 main form .btn:hover {
     opacity: 0.6;
 }
-main .err-msg {
-    margin-top: 10px;
-    color: var(--soft-red);
-}
+
+
 aside {
     background: url("./images/hero-desktop.jpg") no-repeat center center/cover;
     height: 100vh;
     width: 50%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              VALIDATION STYLE                              */
+/* -------------------------------------------------------------------------- */
+.icon-error {
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.err-msg {
+    margin-top: 10px;
+    color: var(--soft-red);
+    display: none;
 }
 
 /* -------------------------------------------------------------------------- */
