@@ -193,6 +193,7 @@ aside {
     main {
         padding: 320px 30px 20px 30px;
     }
+
 }
 
 @media screen and (max-width: 488px) {
@@ -241,5 +242,43 @@ aside {
 @media screen and (min-width: 1530px) {
     main form .icon-error {
         left: 75%;
+    }
+}
+
+@media screen and (max-height: 800px) and (max-width:920px){
+    main {
+        padding: 120px 60px 20px 60px;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    aside {
+        height:240px;
+        background-image: url("./images/hero-mobile.jpg");
+    }
+
+    main form .icon-error {
+        left: 55%;
+    }
+}
+
+@media screen and (max-height: 850px) and (max-width:420px) {
+    main {
+        padding: 120px 10px 20px 10px;
+    }
+
+    main h1 {
+        font-size: 1.3rem;
+    }
+
+    aside {
+        height:170px;
+        background-image: url("./images/hero-mobile.jpg");
+    }
+
+    main form .icon-error {
+        left: 53%;
     }
 }

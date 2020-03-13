@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
     let inputValue = inputField.value
     
     let mailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-    
+
     if(inputValue === '' ||  !mailRegex.test(inputValue))  {
         errMsg.style.display = 'block'
         iconError.style.display = 'block'
